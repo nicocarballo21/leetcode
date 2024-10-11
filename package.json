@@ -1,0 +1,19 @@
+{
+  "name": "leetcode",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "husky": "^9.1.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}
