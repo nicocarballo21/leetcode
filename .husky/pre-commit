@@ -1,1 +1,3 @@
+bun run ts-standard --fix
+bun run ts-standard
 bun test

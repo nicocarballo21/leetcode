@@ -4,7 +4,12 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "husky": "^9.1.6"
+    "husky": "^9.1.6",
+    "ts-standard": "^12.0.2"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json",
+    "ignore": ["**/node_modules/**"]
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
