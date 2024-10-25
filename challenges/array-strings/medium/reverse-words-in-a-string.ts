@@ -25,6 +25,21 @@
 // Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
 export default function solution (s: string): string {
+  /// // SOLUTION WITH TWO POINTERS ///////
+  // const words = s.split(' ')
+
+  // let left = 0
+  // let right = words.length - 1
+
+  // while (left < right) {
+  //   const temp = words[left]
+  //   words[left] = words[right]
+  //   words[right] = temp
+  //   left++
+  //   right--
+  // }
+
+  // return words.filter(word => word !== '').join(' ')
   const words = s.split(' ')
 
   let t = ''
