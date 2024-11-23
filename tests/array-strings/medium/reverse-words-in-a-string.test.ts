@@ -1,14 +1,14 @@
 import fn from '@challenges/array-strings/medium/reverse-words-in-a-string'
-import { describe, it, expect } from 'bun:test'
+import { describe, test, expect } from 'vitest'
 
 describe('151- Reverse words in a string', () => {
-  it('a', () => {
+  test('a', () => {
     expect(fn('the sky is blue')).toBe('blue is sky the')
   })
-  it('b', () => {
+  test('b', () => {
     expect(fn('  hello world  ')).toBe('world hello')
   })
-  it('c', () => {
+  test('c', () => {
     expect(fn('a good   example')).toBe('example good a')
   })
 })

@@ -1,9 +1,9 @@
-import { describe, it, expect } from 'bun:test'
+import { describe, test, expect } from 'vitest'
 
 import { LRUCache } from '@challenges/backend/LRU-cache'
 
 describe('LRU-cache', () => {
-  it('Leet code test case', () => {
+  test('Leet code test case', () => {
     const cache = new LRUCache(2)
 
     cache.put(1, 1)
@@ -18,20 +18,20 @@ describe('LRU-cache', () => {
     expect(cache.get(4)).toBe(4)
   })
 
-  it('should return -1 for a non-existent key', () => {
+  test('should return -1 for a non-existent key', () => {
     const cache = new LRUCache(2)
 
     expect(cache.get(1)).toBe(-1)
   })
 
-  it('should add and retrieve a value', () => {
+  test('should add and retrieve a value', () => {
     const cache = new LRUCache(2)
 
     cache.put(1, 1)
     expect(cache.get(1)).toBe(1)
   })
 
-  it('should evict the least recently used item', () => {
+  test('should evict the least recently used item', () => {
     const cache = new LRUCache(2)
 
     cache.put(1, 1)
@@ -42,7 +42,7 @@ describe('LRU-cache', () => {
     expect(cache.get(3)).toBe(3)
   })
 
-  it('should update the value of an existing key', () => {
+  test('should update the value of an existing key', () => {
     const cache = new LRUCache(2)
 
     cache.put(1, 1)
@@ -50,7 +50,7 @@ describe('LRU-cache', () => {
     expect(cache.get(1)).toBe(10)
   })
 
-  it('should move the accessed key to the most recent position', () => {
+  test('should move the accessed key to the most recent position', () => {
     const cache = new LRUCache(2)
 
     cache.put(1, 1)

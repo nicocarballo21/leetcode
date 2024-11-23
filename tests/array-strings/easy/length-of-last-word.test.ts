@@ -1,17 +1,17 @@
 import fn from '@challenges/array-strings/easy/length-of-last-word'
-import { describe, it, expect } from 'bun:test'
+import { describe, test, expect } from 'vitest'
 
 describe('58. Length of Last Word', () => {
-  it('a', () => {
+  test('a', () => {
     expect(fn('Hello World')).toEqual(5)
   })
-  it('b', () => {
+  test('b', () => {
     expect(fn('   fly me   to   the moon  ')).toEqual(4)
   })
-  it('c', () => {
+  test('c', () => {
     expect(fn('luffy is still joyboy')).toEqual(6)
   })
-  it('d', () => {
+  test('d', () => {
     expect(fn('cat dog house     but   ph  y  phone    ')).toEqual(5)
   })
 })
